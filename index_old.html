@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>CSS Content Slider Demo</title>
+		<meta name="description" content="Do you ever try a CSS Content Slider? May you haven't, if so then here we have make one for you which is easy to implement. It is repsonsive and support widge range of browser." />
+		<meta name="author" content="Codeconvey" />
+    <!--Only for demo purpose - no need to add.-->
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<style>
+section{
+	max-width: 100%;
+    position: relative;
+    padding: 3.125rem 3.75rem;
+    background-color:#fff;
+}
+.section_wrapper{
+	margin: 0 auto;
+    position: relative;
+    background-color:inherit;
+    max-height:max-content;
+}
+.content_wrapper{
+color:#000;
+border-color:#333333;
+}
+.content_wrapper_title_area{
+	border-bottom: 1px #777 solid;
+}
+.content_wrapper_wrap{
+    margin-left: 7.5rem;
+    margin-right: 13.75rem;
+    position: relative;
+
+}
+.content_wrapper_wrap{
+    background-color: #F6F7F5;
+}
+.content_wrapper_wrap:before {
+    z-index: 0;
+    content: "";
+    width: 47.5rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 2.5rem;
+}
+.content_wrap_slider{
+	position: relative;
+    z-index: 2;
+
+}
+.content_wrap_slider .content_wrap_slider_list{
+	overflow: visible;
+}"
+
+.slick_slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+
+}
+.slick_slider .content_wrap_slider_list{
+-webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.rt-heading{
+	margin:2rem 25rem 0rem;
+}
+.rt-container {
+   width: 750px;
+    height: 100vw;
+    border-top: 1px #777 solid;
+    background-color: #f5d5d5;
+   }
+   .col-rt-6, .col-rt-12{
+   width:100%; background-color:#f5d5d5;}
+#slides{width:107%;}
+#slides .slide{background-color:transparent;}      
+   .mask{overflow:visible;}
+   .slide_textbox{background-color:#fefefe;
+   	width: 21.25rem;
+    padding: 2.5rem 2.5rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+   }
+</style>
+<header></header>
+<section>
+	<div class="section_wrapper">
+		<div class="content_wrapper">
+			<div class="content_wrapper_title_area"></div>
+			<div class="content_wrapper_wrap">
+			    <div class="content_wrap_slider slick_slider">
+			    	<!-- <div class="content_wrap_slider_list"> -->
+					          <div class="col-rt-12">
+					              <div id="slides">
+					              <input checked type="radio" name="slider" id="slide1" class="set" />
+					              <input type="radio" name="slider" id="slide2" class="set" />
+					              <input type="radio" name="slider" id="slide3" class="set" />
+					              <input type="radio" name="slider" id="slide4" class="set" />
+					              <input type="radio" name="slider" id="slide5" class="set" />
+					              <div class="mask">
+					                <div class="overflow">
+					                  <div class="slide">
+					                  	<img src="images/cuban_street.jpg" style="width:50%;">
+					                    <div class="slide_textbox">
+					                    <h3>Cuban Travels</h3>
+					                    <p>The ruggedness of the streets of Varadero were pleasantly lined with palm trees and green foliage that winter calls upon us to yearn for. </p>
+										 <p>Traveling through a camera is a dream come true. Looking through pages and pages of National Geographic as a kid and aspiring to create in similar breathe taking ways couldnt please me more. </p>
+								
+										<p>	Color is vibrant against the skies. I still wish I was there. Travel has begotten a new importance to my existance and the creative process. It challenges my resilience against our world. A new bucket list item prevailing in my spirit.</p>
+										<p>	With the new equipment I have aquired the clarity of these visits will soon bring awe to my eyes. Canon is an amazing camera and the 5D Mark 4 is to die for.<a href="#" target="_blank">More Details Here.</a></p>                                      
+					                  </div>
+					                  
+					                  </div>
+					                  
+					                  <div class="slide">   
+					                  		<img src="images/cuban_models.jpg" >
+					                    	<h3>Cuban Models</h3>                    
+											<p>Bucket List item was a trip to cuba and photograph women, culture and beautiful landscapes. The weather was not on our side. It rained the entire time yet weather patterns had end of May as rain free. We made the most of it. </p>
+											<p>The beauty of Cuban however is due to the weather. The images represent the humidity in the air adding to the shallow depth of field bokeh. THe softness of the combination is memorable genre.</p>
+										</div>
+					                  <div class="slide">
+					                  <img src="images/new_years.jpg">
+					                    <h3>Toronto</h3>
+					                    <p>All the visits and cultural participation. Nuit art expose when in Toronto.</p>
+					                    <p>I did not bable enough here to get the fifth to show up? Im not sure what to say we'll figure it out. We might event talk about Randy Pond. :)</p>
+					                    <p>Still not enough, more content has to fill; to push the fifth item down? to line up left as per layout.</p>
+					                  </div>
+					                  <div class="slide">
+					                  	<img src="images/bokeh_abstract.jpg">
+					                    <h3>New York</h3>
+					                    <p>A must see bucket list item. Three days and we ran and ran to do / see all we could. It requires a revisit as my lense was not wide enough. A huge drawback for landmark images, However, I did do panning of them all so I can blow them wide up! </p>
+					                  	<p>The assumption was correct more content must fill in order to push the next slide to be left instead of below. Maybe a slight bit more content.</p>
+					                  </div>
+					                  <div class="slide">
+					                  	<img src="images/mermaid_walk.jpg"/>
+					                  	<h3>Conceptual Mermaid to Feet</h3>
+					                  	<p>Brought along some playful items like disco balls and rope to play at seaside with reflection and conceptuals.</p>
+					                  	
+					                  </div>
+					                </div>
+					              </div>
+					              <div id="controls" onClick="">
+					                <label for="slide1"></label>
+					                <label for="slide2"></label>
+					                <label for="slide3"></label>
+					                <label for="slide4"></label>
+					                <label for="slide5"></label>
+					              </div>
+					            </div>
+			
+			
+						<!-- </div> -->
+		    		</div>
+		    	</div>
+		    </div>
+    	</div>
+    </div>
+</section>
+     
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76614800-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-76614800-1');
+    </script>
+
+	</body>
+</html>

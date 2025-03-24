@@ -1,0 +1,42 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap');
+html{
+	
+	box-sizing:border-box;
+	margin:0; padding:0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+body{
+	margin:0; 
+	padding:0;
+}
+
+a {
+	text-decoration:none;
+	color:#777;
+	padding: 14px 16px;
+	color: #777;
+  	text-align: center;	
+  	
+ 
+}
+
+
+h1,h2,h3{
+	font-family: 'Cinzel', serif;
+}
+
+p {
+	font-family: 'Comfortaa', cursive;
+}
+.page_section p,
+.textarea_block p,
+.paragraph_alley p{ 
+	font-family: 'Frank Ruhl Libre', serif !important; 
+}

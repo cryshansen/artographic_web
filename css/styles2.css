@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/*
+	Crystal Hansen Artographic
+	Template Layout style definition
+	
+ */
+/* BODY MAIN  */
+
+body {
+	background-color: #383535; /* slightly different darker grey/black */
+	width:1080px;
+	margin: 0px auto;
+}
+/*
+.wrapper{
+	
+	background-color:#4f4b4b;
+	/*#6f6565; lighter grey
+	}
+*/
+/* pale pinkygrey e5e3e3 nav and bottom footer colors*/
+
+
+.site{
+	width: 100%;
+}
+
+/* HEADER -  SEARCH, NAVIGATION, ETC */
+#header{
+	padding: 35px 8px 10px 16px;
+	}
+#logo{
+	padding-left: 30px; width:390px;
+	float:left;/* meaningfulfor the search position;*/
+	}
+
+#searchy{
+/*	 margin-left: 681px; 
+	 background-position: 681px;
+	 position:relative;
+	 height: 0px; width: 390px;
+	 margin: 0px 0px 0px 681px;
+	 padding: 0px; none of this made any difference to the postitioning of the search bar 
+	 */
+	
+	}
+.search_main { 
+	/*float:left; */
+/*	width: 279px; 
+	margin-left: 450px; 
+*/	height:0px; 
+	}
+#searchy .search_main form
+{
+	float:!important left; 
+	margin-left: 390px;
+	padding-left: 150px;
+	}	
+	
+#topnav
+{
+	width: 680px;
+    height: 35px;
+    font-size: 12px; /* or .25 em for growth expansion etc or 25%*/
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    /*text-shadow: 3px 2px 3px #333333;
+    background-color:  none;
+    border-radius: 8px;*/
+	color:#e5e3e3;
+	padding-top: 35px;
+	
+	}
+#topnav ul {
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+#topnav li {
+	display: inline;
+	padding: 16px; 
+}
+
+#topnav a {
+    text-decoration: none;
+    color: #e5e3e3;
+    padding: 8px 0px 8px 0px;
+}
+
+#topnav a:hover {
+    color: #4f4b4b;
+    background-color: #383535;
+}
+
+
+/* MAIN LEFT BODY */
+
+#image_viewer{
+	
+	width: 980px;
+	margin: 0px;
+	padding:0px;
+
+}
+
+
+#image_viewer img{
+	width: 980px;
+	margin: 0px;
+	padding:0px;
+}
+
+.mainleft{
+	
+	margin:0px;
+	padding:0px;
+}
+.innerleft{
+	margin:0px;
+	padding:0px;
+
+}
+img {
+
+	float:right;
+
+}
+		
+/*---------------------------------------    			RIGHT CONTENT                  ---------------------------------------------------*/
+
+.mainright{
+	float:left;
+	width:295px;
+	height:100%;
+	margin:0px;
+	padding:0px;
+	background-color: #003366;
+
+}
+
+#r_content{
+	margin:0px;
+	margin-top:35px;
+	padding:0px;
+	font-size:.8em;
+	color:#FFFFFF;
+
+}
+#r_content p{
+padding-left: 10px;
+}
+#r_content table{
+padding-left: 10px;
+}
+
+#r_content h4{
+	margin:0px;
+	padding: 10px 0px 10px 35px;
+}
+hr{
+ 	border: 1px dotted #ccf;
+}
+
+#r_content ul
+{ 
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-family: verdana, arial, Helvetica, sans-serif;
+}
+
+#r_content li { margin: 0 0 1px 0; }
+
+#r_content a
+{
+	display: block;
+	padding: 5px 10px;
+	width: 275px;
+	color: #fff;
+	background-color: #036;
+	text-decoration: none;
+}
+
+#r_content a:hover
+{
+	color: #fff;
+	background-color: #69C;
+	text-decoration: none;
+}
+
+#r_content ul ul li { margin: 0 0 1px 0; }
+
+#r_content ul ul a
+{
+	display: block;
+	padding: 5px 5px 5px 30px;
+	width: 260px;
+	color: #fff;
+	background-color: #369;
+	text-decoration: none;
+}
+
+#r_content ul ul a:hover
+{
+	color: #fff;
+	background-color: #69C;
+	text-decoration: none;
+}
+
+/*------------------------------------------------ FOOTER  ---------------------------------------------------*/
+.footer{
+	background-color:#5f5f5f;
+	font-size:1em;
+	margin: 0px;
+	padding:0px; 
+	display:inline-block;
+	width:100%;
+}
+.footer p { 
+	margin: 10px;
+	padding:0px;
+	float:left;
+	color:#a9a6a6;
+}
+.footer #rt_footer{
+	float:left; 
+	padding-left: 300px;
+	color:#a9a6a6;
+	/*lighter grey below*/
+/*	background-color: #6f6565; */
+}
+.fmenu{
+	float:right;
+
+}
+.fmenu p{
+	display:block;
+	text-decoration:none;
+	list-style-type:none;
+	padding-bottom: 0px;
+}

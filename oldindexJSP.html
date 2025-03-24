@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>crystalhansenartographic.com</title>
+<link rel="stylesheet" href="css/styles2.css">
+<link rel="stylesheet" href="css/fontawesome.css"/>
+<link rel="stylesheet" href="css/fontawesome.min.css"/>
+<link rel="stylesheet" href="css/font.css"/>
+<link href="css/all.css" rel="stylesheet"/> <!--load all styles -->
+<script src="web_includes/jobs.js"></script> 
+
+</head>
+<body>
+<div class="site">
+<!-- <img src="images/leftSide2.png" style="opacity:30%;" width="100%"/> -->
+	<div w3-include-html="topnav.html"></div>
+	<div class="container">
+		<div w3-include-html="menu.html"></div>
+		<div w3-include-html="pages/content.html"></div>
+	</div>
+	<div w3-include-html="footer.html"></div>
+</div>
+</body>
+<script>
+includeHTML();
+</script>
+<style>
+.site{
+	background-image: url("images/leftSide2.png");
+	opacity:30%;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.container{
+	background-color:#fff;
+	overflow:hidden;
+	*zoom: 1; /*IE*/
+
+}
+/* .top_nav{
+	background:#818181; /*#F4F4F4;*/
+/*	width:100%;
+	height:80px;
+}
+.top_nav a{
+	position:relative;
+	margin-top:50px;
+	text-decoration:none;
+	padding: 15px;
+	color:#666;
+}
+ */
+ /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #818181;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+ 
+.menu{
+ background:#F4F4F4;
+ width:250px;
+ display: inline-block; 
+ float:left; 
+
+}
+.menu a{
+	display: block;
+	text-decoration:none;
+	padding: 8px;
+	color:#666;
+}
+
+.content p{ /* display: inline-block; float:left; */ 
+	margin-left: 25px;
+	display: inline-block; 
+}
+
+
+/* Hover tooltips */
+.field-tip {
+    position:relative;
+}
+
+.field-tip .tip-content {
+        position:absolute;
+        top:-25px; /* - top padding */
+        right:9999px;
+        width:200px;
+        margin-right:-280px; /* width + left/right padding */
+        padding:10px;
+        color:#fff;
+        background:#333;
+        -webkit-box-shadow:2px 2px 5px #aaa;
+           -moz-box-shadow:2px 2px 5px #aaa;
+                box-shadow:2px 2px 5px #aaa;
+        opacity:0;
+        -webkit-transition:opacity 250ms ease-out;
+           -moz-transition:opacity 250ms ease-out;
+            -ms-transition:opacity 250ms ease-out;
+             -o-transition:opacity 250ms ease-out;
+                transition:opacity 250ms ease-out;
+    }
+        /* <http://css-tricks.com/snippets/css/css-triangle/> */
+        .field-tip .tip-content:before {
+            content:' '; /* Must have content to display */
+            position:absolute;
+            top:50%;
+            left:-16px; /* 2 x border width */
+            width:0;
+            height:0;
+            margin-top:-8px; /* - border width */
+            border:8px solid transparent;
+            border-right-color:#333;
+        }
+        .field-tip:hover .tip-content {
+            right:-20px;
+            opacity:1;
+        }
+
+@font-face {
+	font-family:'fontawesome';
+	src: url('fonts/fontawesome/fontawesome.eot');
+	src:url('fonts/fontawesome/fontawesome.eot') format('embedded-opentype'),
+	url('fonts/fontawesome/fontawesome.woff') format('woff'),
+	url('fonts/fontawesome/fontawesome.ttf') format('truetype'),
+	url('fonts/fontawesome/fontawesome.svg') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+
+.fa {
+	display:inline-block;
+	font:normal normal normal 14px/1 FontAwesome;
+	font-size:inherit;
+	text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	transform:translate(0, 0);
+}
+.fa-2x {
+ 	font-size:2em;
+}
+.fa-home:before {content:'\e800';}
+.fa-menu:before {content: '\f0c9';}
+.fa-globe:before {content:'\e801';}
+.fa-search:before {content:'\e802'; }
+.fa-thumbs-o-up:before {content:'\e803';}
+.fa-left-open:before {content:'\e804';}
+.fa-right-open:before {content:'\e805';}
+.fa-facebook-square:before {content:'\e806';}
+.fa-google-plus-square:before {content:'\e807';}
+.fa-twitter-square:before {content:'\e808';}
+.fa-caret-down:before {content:'\e809';}
+.fa-caret-up:before {content:'\e80a';}
+.fa.fa-adjust:before { content: '\e80b'; }
+span.marked, span.deprecated {
+ 	color:#e80000;
+ 	background-color:transparent;
+}
+
+.top {
+	position:relative;
+	background-color:#ffffff;
+	height:68px;
+	padding-top:20px;
+	line-height:50px;
+	overflow:hidden;
+	z-index:2;
+}
+span.crystalhansenartographic-logo {
+	/* font-family:fontawesome; */
+	font-family: 'News Cycle', sans-serif;
+	text-decoration:none;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	font-size:37px;
+	letter-spacing:3px;
+	color:#555555;
+	display:block;
+	position:absolute;
+	top:17px;
+	left: 20px;
+}
+.crystalhansenartographic-logo .dotcom {color:#445455;}
+.crystalhansenartographic-logo{background-image:url("WebContent/images/signature2.png");}
+.topnav {
+	position:relative;
+	z-index:2;
+	font-size:17px;
+	background-color:#5f5f5f;
+	color:#f1f1f1;
+	width:100%;
+	padding:0;
+	letter-spacing:1px;
+	font-family:"Segoe UI",Arial,sans-serif;
+}
+.topnav a{
+/*padding:10px 15px 9px 15px !important;*/
+}
+.topnav .w3-bar a:hover,.topnav .w3-bar a:focus{
+background-color:#000000 !important;
+color:#ffffff !important;
+}
+.topnav .w3-bar a.active {
+background-color:#4CAF50;
+color:#ffffff;
+}
+a.topnav-icons {
+width:52px !important;
+font-size:20px !important;
+padding-top:11px !important;
+padding-bottom:13px !important;
+}
+a.topnav-icons.fa-home {font-size:22px !important}
+a.topnav-icons.fa-menu {font-size:22px !important}
+a.topnav-localicons {
+font-size:20px !important;
+padding-top:6px !important;
+padding-bottom:12px !important;
+}
+i.fa-caret-down,i.fa-caret-up{width:10px}
+#sidenav h2 {
+font-size:21px;
+padding-left:16px;
+margin:-4px 0 4px 0;
+width:204px;
+}
+#sidenav a {font-family:"Segoe UI",Arial,sans-serif;text-decoration:none;display:block;padding:2px 1px 1px 16px}
+#sidenav a:hover,#sidenav a:focus {color:#000000;background-color:#cccccc;}
+#sidenav a.active {background-color:#4CAF50;color:#ffffff}
+#sidenav a.activesub:link,#sidenav a.activesub:visited {background-color:#ddd;color:#000;}
+#sidenav a.activesub:hover,#sidenav a.activesub:active {background-color:#ccc;color:#000;}
+
+
+
+</style>
+</html>

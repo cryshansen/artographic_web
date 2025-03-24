@@ -1,0 +1,97 @@
+#slideshow {
+  overflow: hidden;
+  height: 95vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 8365px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 95vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: content-box;
+  object-fit: contain ;
+}
+
+.slide:nth-child(1) {
+  background: #D93B65;
+  background-image:url('../images/coffee.jpg') ;
+}
+
+.slide:nth-child(2) {
+  background: #037E8C;
+  background-image:url('../images/familyA_sm.jpg');
+  
+}
+
+.slide:nth-child(3) {
+  background: #36BF66;
+  background-image:url('../images/cuban_model.jpg');
+ 
+  
+}
+
+.slide:nth-child(4) {
+  background: #D9D055;
+   background-image:url('../images/mermaid_walk.jpg');
+  
+}
+
+.slide:nth-child(5) {
+  background: #fefefe;
+   background-image:url('../images/redhead.jpg');
+}
+
+
+
+.slide-number {
+  	color: #efebeb;
+  	text-align: center;
+	font-family: 'Open Sans', sans-serif, 'google';
+    font-size: 0.5rem;
+    letter-spacing: 0.375em;
+    word-spacing: 0em;
+    line-height: 2.75em;
+    text-transform: none;
+    /* font-weight: normal; */
+}
+h1{
+	display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0em;
+    margin-inline-end: 0em;
+    font-weight: bold;
+
+}
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -1440px;}
+  50% {margin-left: -1440px;}
+  60% {margin-left: -2880px;}
+  70% {margin-left: -2880px;}
+  80% {margin-left: -4320px;}
+  90% {margin-left: -4220px;}
+}
+
+/* online
+
+@-webkit-keyframes slide {
+    0%{margin-left: 0px;}
+  20% {margin-left: 0px;}
+  30% {margin-left: -1673px;}
+  50% {margin-left: -1673px;}
+  60% {margin-left: -3346px;}
+  70% {margin-left: -3346px;}
+  80% {margin-left: -5010px;}
+  90% {margin-left: -5010px;}
+} */
+

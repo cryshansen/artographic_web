@@ -1,0 +1,122 @@
+/**** slider ****/
+
+h4{
+	font-family: 'Cinzel', serif;
+}
+p{
+	font-family: 'Comfortaa', cursive;
+}
+
+
+#text-slider, ul
+{
+	height: 20vw;
+}
+
+#text-slider
+{
+	margin: 0rem auto;
+	overflow: hidden;
+	background:#f4f4f4;
+	position: relative;
+	max-width: 600px;
+}
+
+#text-slider li
+{
+	margin-top:2rem;
+	float: left;
+	position: relative;
+	width: 600px;
+	display: inline-block;
+	/* height: 200px; */
+}
+
+#text-slider ul
+{
+	list-style: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 12000px;
+	transition: left .3s linear;
+	-moz-transition: left .3s linear;
+	-o-transition: left .3s linear;
+	-webkit-transition: left .3s linear;
+	margin-left: -25px;
+  	font-family: century gothic;
+  	color: #666;
+}
+
+/*** Content ***/
+
+.text-slider-container
+{
+	margin: 0 auto;
+	padding: 0;
+	width: 550px;
+  	/* min-height: 180px; */
+}
+
+.text-slider-container h4
+{
+  font-family: 'Cinzel', serif;
+ 	color: #000;
+  font-weight:400;
+  font-size: 20px;
+}
+.text-slider-container h5 {
+	text-align: right;
+	font-weight:normal;
+	font-family: 'Comfortaa', cursive;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+  color:#EE2D24;
+}
+
+.text-slider-container  p
+{
+  text-indent: 40px;
+	font-family: 'Comfortaa', cursive;
+	font-size: 15px;
+	color: #434343;
+	line-height: 200%;
+	margin:0 auto 0 auto;
+	margin: 10px 25px;
+	text-align: justify;
+}
+
+/*** target hooks ****/
+
+@-webkit-keyframes slide-animation {
+	0% {left:0px; opacity:0; }
+	2% {left:0px; opacity:1;}
+	20% {left:-600px; opacity:1;}
+	/* 22.5% {opacity:0.6;} */
+	/* 25% {left:-600px; opacity:1;} */
+	40% {left:-1200px; opacity:1;}
+	/* 45% {left:-1200px; opacity:1;} */
+	/* 47.5% {opacity:0.6;} */
+	60% {left:-1800px; opacity:1;}
+	/* 70% {left:-1800px; opacity:1;} */
+	72.5% {opacity:0.6;}
+	80% {left:-2400px; opacity:1;}
+	95% {opacity:1;}
+	98% {left:-2400px; opacity:0;} 
+	100% {left:0px; opacity:0;}
+}
+
+#text-slider ul
+{
+	-webkit-animation: slide-animation 45s infinite;
+}
+
+/* use to paused the content on mouse over */
+
+#text-slider ul:hover
+{
+	-moz-animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+}
+

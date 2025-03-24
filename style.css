@@ -1,0 +1,46 @@
+html { background-color :#fff;   }
+body{
+	font-family:Helvetica; 
+	font-size:15px; 
+	color:#444;	
+	text-align:center;
+	 height:100%;
+}
+
+input.set { display:none; }
+#slide1:checked ~ .mask .overflow { margin-left:0; }
+#slide2:checked ~ .mask .overflow { margin-left:-100%; }
+#slide3:checked ~ .mask .overflow { margin-left:-200%; }
+#slide4:checked ~ .mask .overflow { margin-left:-300%; }
+#slide5:checked ~ .mask .overflow { margin-left:-400%; }
+
+#slides { margin:50px auto; width:80%; position:relative; }
+#slides .mask { width:90%; overflow:hidden; margin:auto; }
+#slides .overflow { 
+	width:400%; 
+	-webkit-transform:translateZ(0); 
+	-webkit-transition:all 0.5s ease-out; 
+	-moz-transition:all 0.5s ease-out; 
+	-o-transition:all 0.5s ease-out; 
+	transition:all 0.5s ease-out; }
+#slides .slide {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+/*     height: 200px; */
+    line-height: normal;
+    padding: 1%;
+    width: 25%;
+}
+#slides .slide {
+	line-height:25px;	
+}
+#slides .slide img{ width:75%; float:left;}
+#controls { width:100%; }
+
+#controls label { display:none; width:5%; height:60px; opacity:0.3; position:absolute; top:50%; margin-top:-30px; cursor:pointer; background:#000; }
+
+#controls label:hover { opacity:0.8; }
+
+#slide1:checked ~ #controls label:nth-child(2), #slide2:checked ~ #controls label:nth-child(3), #slide3:checked ~ #controls label:nth-child(4),  #slide4:checked ~ #controls label:nth-child(5) { right:0; display:block; }
+
+#slide2:checked ~ #controls label:nth-child(1), #slide3:checked ~ #controls label:nth-child(2), #slide4:checked ~ #controls label:nth-child(3), #slide5:checked ~ #controls label:nth-child(4) { left:0; display:block; }

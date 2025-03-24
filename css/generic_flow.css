@@ -1,0 +1,39 @@
+html{
+	
+	box-sizing:border-box;
+	margin:0; padding:0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+
+body{
+	
+	width:100%;
+	max-width:100%;
+	margin:0rem;
+	padding:0rem;
+}
+
+
+a {
+	text-decoration:none;
+	color:#777;
+	padding: 14px 16px;
+	color: #777;
+  	text-align: center;	
+  	
+ 
+}
+
+
+h1,h2,h3{
+	font-family: 'Cinzel', serif;
+}
+
+p {
+	font-family: 'Comfortaa', cursive;
+}
